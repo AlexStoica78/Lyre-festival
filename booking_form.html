@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+
+
+    <style>
+        header {
+
+
+            padding: 20px;
+
+
+            /*you can add padding: 10px, 20px, 30px, 40px, top, right, bottom, left, it is going as a clock */
+        }
+
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgba(49, 35, 35, 0.599);
+
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            background-color: rgba(135, 107, 107, 0.5);
+            border-radius: 10px;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 0px;
+            border-radius: 5px;
+            margin: 15px;
+            margin-left: 30px;
+
+
+        }
+
+
+
+
+
+
+
+
+        div.elem-group {
+            margin: 20px 0;
+        }
+
+        div.elem-group.inlined {
+            width: 49%;
+            display: inline-block;
+            float: none;
+            margin-left: 1%;
+        }
+
+        label {
+            display: block;
+            font-family: 'Nanum Gothic';
+            padding-bottom: 10px;
+            font-size: 1.25em;
+        }
+
+        input,
+        select,
+        textarea {
+            border-radius: 2px;
+            border: 2px solid #777;
+            box-sizing: border-box;
+            font-size: 1.25em;
+            font-family: 'Nanum Gothic';
+            width: 100%;
+            padding: 10px;
+        }
+
+        div.elem-group.inlined input {
+            width: 95%;
+            display: inline-block;
+        }
+
+        textarea {
+            height: 250px;
+        }
+
+        hr {
+            border: 1px dotted #ccc;
+        }
+
+
+
+        button {
+            height: 50px;
+            background: orange;
+            border: none;
+            color: white;
+            font-size: 1.25em;
+            font-family: 'Nanum Gothic';
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            border: 2px solid black;
+        }
+
+        form {
+            margin-right: 500px;
+            margin-left: 500px;
+        }
+    </style>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="festival_overview.html">FESTIVAL OVERVIEW</a></li>
+                <li><a href="musicians.html">MUSICIANS</a></li>
+                <li><a href="Places-to-eat-and-menus.html">PLACES TO EAT AND MENUS</a></li>
+                <li><a href="contact_form.html">CONTACT FORM</a></li>
+                <li><a href="booking_form.html">BOOKING FORM</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+</head>
+
+<body>
+    <h1 style="color: #5f585885;">Booking Form</h1>
+
+
+    <form>
+
+
+
+
+        <div class="elem-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern="[A-Z\sa-z]{3,20}" required>
+        </div>
+        <div class="elem-group">
+            <label for="email">Your E-mail</label>
+            <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+        </div>
+        <div class="elem-group">
+            <label for="phone">Your Phone</label>
+            <input type="tel" id="phone" name="visitor_phone" placeholder="0777-3883-872"
+                pattern="(\d{4})-?\s?(\d{4})-?\s?(\d{3})" required>
+        </div>
+
+
+
+
+        <div class="elem-group">
+            <label for="ticket-preference">Select Ticket Preference</label>
+            <select id="ticket-preference" name="ticket-preference" required>
+                <option value="">Choose a ticket from the list</option>
+                <option value="connecting">VIP ticket</option>
+                <option value="adjoining">Standard ticket</option>
+            </select>
+        </div>
+
+        <div class="elem-group">
+            <label for="message">Anything Else?</label>
+            <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."
+                required></textarea>
+        </div>
+        <button type="submit">Buy A Ticket</button>
+    </form>
+
+</body>
+
+</html>

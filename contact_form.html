@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT FORM</title>
+
+    <style type="text/css">
+        header {
+
+            padding: 20px;
+
+            /*you can add padding: 10px, 20px, 30px, 40px, top, right, bottom, left, it is going as a clock */
+        }
+
+
+
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgba(49, 35, 35, 0.599);
+
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            background-color: rgba(135, 107, 107, 0.5);
+            border-radius: 10px;
+
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 0px;
+            border-radius: 5px;
+            margin: 15px;
+            margin-left: 30px;
+
+        }
+
+        /* Responsive rules */
+
+
+
+        * {
+            box-sizing: border-box;
+
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            padding-left: 20px;
+            margin-left: 500px;
+            /* moving the container from left to right */
+            /* These are the labels mooving left */
+
+            width: 534px;
+            flex-wrap: wrap;
+
+        }
+
+        /*  
+        @media screen and (max-width: 700px) {
+            header nav {
+                background: red;
+
+                
+            }
+
+        }
+
+        @media screen and (max-width: 700px) {
+            .container {
+                background: red;
+
+                
+            }
+
+        }
+        */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="festival_overview.html">FESTIVAL OVERVIEW</a></li>
+                <li><a href="musicians.html">MUSICIANS</a></li>
+                <li><a href="places-to-eat-and-menus.html">PLACES TO EAT AND MENUS</a></li>
+                <li><a href="contact_form.html">CONTACT FORM</a></li>
+                <li><a href="booking_form.html">BOOKING FORM</a></li>
+
+            </ul>
+
+
+        </nav>
+
+    </header>
+
+    <h1 style="color: #5f585885;">Contact Form</h1>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Email</label>
+            <input type="text" id="Email" email="email" placeholder="Your email..">
+
+            <label for="address">Address</label>
+            <input type="text" id="Address" address="address" placeholder="Your address..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="uk">UK</option>
+                <option value="greece">Greece</option>
+                <option value="romania">Romania</option>
+                <option value="russia">RUSSIA</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>

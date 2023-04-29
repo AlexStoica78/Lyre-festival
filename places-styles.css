@@ -1,0 +1,175 @@
+
+header {
+
+    padding: 20px;
+    /*you can add padding: 10px, 20px, 30px, 40px, top, right, bottom, left, it is going as a clock */
+}
+
+a{
+    font-size: 21px;
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgba(49, 35, 35, 0.599);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: rgba(135, 107, 107, 0.5);
+    border-radius: 10px;
+}
+
+li {
+    display: inline-block;
+    margin-right: 0px;
+    border-radius: 5px;
+    margin: 15px;
+    margin-left: 20px;
+
+}
+
+body{
+    background-color: rgba(31, 27, 29, 0.362);
+    background-image: url(images/restaurant\ back.jpg);  
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.flex-container{
+    flex-direction: row;
+    text-align: center;
+}
+
+.flex-container .content{
+    width: 91%;
+    display: inline-flex;
+}
+
+.flex-container .content1{
+    width: 91%;
+    display: inline-block;
+}
+
+.flex-container .content2{
+    width: 91%;
+    display: inline-block;
+}
+
+.flex-container .content-title{
+    width: 74%;
+    text-align: center;
+    display: inline-block;
+    border-radius: 2%;
+}
+
+.flex-container div{
+    background-color: rgba(172, 208, 222, 0.216);
+    font: 12px;
+    padding: 2em;
+    margin: 1rem;
+    width: 33%;
+    border-color: black;
+    border-radius: px;
+    border-style: none;
+}
+
+.flex-container .content1 div img{
+    width: 950px
+    
+}
+
+.flex-container .content2 div img{
+    width: 950px
+    
+}
+
+img{
+    border-radius: 2%;
+}
+
+.flex-container .content div img{
+    width: 350px
+}
+
+
+
+#left{
+    flex: 0;
+}
+
+#left1{
+width: 1250px; 
+}
+/* this is where you change the box size */
+#left3{
+    width: 1250px; 
+    }
+
+#right{
+    flex-grow: 0;   
+    flex-shrink: 2;
+    flex-basis: 10%;
+}
+
+#left{
+    flex: 0;
+}
+
+#right{
+    
+    flex-grow: 0;   
+    flex-shrink: 2;
+    flex-basis: 10%;
+}
+
+#middleleft{
+    flex: 0 20em ;
+
+}
+
+#middlecenter{
+    
+    flex-grow: 1;  
+
+   
+    flex-shrink: 1;
+
+   
+    flex-basis: 20em;
+
+}
+
+#middleright{
+
+    flex-grow: 4;   
+
+    flex-shrink: 2;
+
+    flex-basis: 20em;
+}
+
+
+
+#more_info{
+    display: none;
+}
+
+p{
+    font-size: 25px;
+}
+/*
+@media  screen and (max-width: 700px) {
+    .co{
+        background: red; 
+    }
+    
+}
+  */

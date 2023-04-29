@@ -1,0 +1,137 @@
+body {
+    /*
+    background-color:  #2F3035;
+    background-image:url()
+    background-size: cover; /*This code is for smaller screen 
+    background-position: center;*/
+    /*adding margin and pading 0, we will get rid of the spaces around everithing that we put inside body*/
+  
+    margin: 0px;
+    padding: 0px; 
+    background-image: url(images/lyre\ background\ image.jpg);
+ 
+
+}
+
+h1{
+    color: rgba(227, 215, 215, 0.347);
+    display: flex;
+   
+}   
+
+h2{
+    
+    color: rgb(106, 32, 32);
+    font-family: sans-serif;
+    padding-top: px;
+    font-size: 100px;
+    align-items: center;
+   
+    display: flex;
+}
+
+aside{
+    display: flex;
+    position: relative; top: 0px; left: -20px;
+}
+
+
+p{
+    font-size: 10px;
+    color: rgb(23, 20, 20);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-shadow: 2px 2px #eff2ef39;
+}
+
+p a {
+    text-decoration: underline;
+    font-size: 28px;
+    color: rgba(111, 7, 7, 0.981);
+
+}
+
+header {
+
+    padding: 30px;
+    /*you can add padding: 10px, 20px, 30px, 40px, top, right, bottom, left, it is going as a clock */
+}
+
+a{
+    font-size: 21px;
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgba(49, 35, 35, 0.599);
+}
+
+
+
+.bottomsec{
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 300px;
+    
+
+}
+
+
+div {
+    background-color: rgb(82, 95, 86);
+    /* For inline you can not set a width */
+    margin: auto;
+    width: 100px;
+    border-radius: 5px;
+}
+  /* 
+div:first-child{
+    background-color: rgb(255, 0, 93);
+
+}
+ */
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: rgba(135, 107, 107, 0.5);
+    border-radius: 10px;
+}
+
+li {
+    display: inline-block;
+    margin-right: 0px;
+    border-radius: 5px;
+    margin: 15px;
+    margin-left: 20px;
+
+}
+
+footer {
+    background-color: rgba(98, 93, 103, 0.579);
+    padding: 20px 748px;
+    display: flex;
+    bottom: 30px;
+    flex-direction: row;
+    position: relative;
+
+}
+
+footer p{
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+}
+
